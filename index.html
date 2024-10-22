@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        .link-group {
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-copy {
+            background-color: #28a745;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+    <script>
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert('Copied: ' + text);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>TeamSpeak Servers</h1>
+        <div class="link-group">
+            <h2>Common</h2>
+            <button class="btn" onclick="window.location.href='ts3server://common.madadev.site'">Open</button>
+            <button class="btn btn-copy" onclick="copyToClipboard('ts3server://common.madadev.site')">Copy</button>
+        </div>
+        <div class="link-group">
+            <h2>TCHD</h2>
+            <button class="btn" onclick="window.location.href='ts3server://tchd.madadev.site'">Open</button>
+            <button class="btn btn-copy" onclick="copyToClipboard('ts3server://tchd.madadev.site')">Copy</button>
+        </div>
+        <div class="link-group">
+            <h2>DSP</h2>
+            <button class="btn" onclick="window.location.href='ts3server://dsp.madadev.site'">Open</button>
+            <button class="btn btn-copy" onclick="copyToClipboard('ts3server://dsp.madadev.site')">Copy</button>
+        </div>
+        <div class="link-group">
+            <h2>Extra</h2>
+            <button class="btn" onclick="window.location.href='ts3server://extra.madadev.site'">Open</button>
+            <button class="btn btn-copy" onclick="copyToClipboard('ts3server://extra.madadev.site')">Copy</button>
+        </div>
+        
+        <h1>Social Links</h1>
+        <div class="link-group">
+            <h2>VK</h2>
+            <button class="btn" onclick="window.location.href='https://vk.com/madadev'">Go to VK</button>
+        </div>
+        <div class="link-group">
+            <h2>Telegram (Channel)</h2>
+            <button class="btn" onclick="window.location.href='https://t.me/madadev'">Go to Telegram Channel</button>
+        </div>
+        <div class="link-group">
+            <h2>Telegram (Chat)</h2>
+            <button class="btn" onclick="window.location.href='https://t.me/madadev_chat'">Go to Telegram Chat</button>
+        </div>
+        <div class="link-group">
+            <h2>Discord</h2>
+            <button class="btn" onclick="window.location.href='https://discord.madadev.site'">Go to Discord</button>
+        </div>
+    </div>
+</body>
+</html>
