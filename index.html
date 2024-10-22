@@ -13,10 +13,14 @@
             align-items: center;
             flex-direction: column;
             height: 100vh;
-            background-color: #f0f0f0;
+            background-color: #16202a;
+            color: #fff;
         }
         .container {
             text-align: center;
+        }
+        .logo {
+            margin-top: 20px;
         }
         .link-group {
             margin: 20px 0;
@@ -47,7 +51,7 @@
         .social-link {
             margin: 0 10px;
             font-size: 24px;
-            color: #000;
+            color: #fff;
             text-decoration: none;
         }
         .social-link:hover {
@@ -68,6 +72,9 @@
 </head>
 <body>
     <div class="container">
+        <!-- Логотип -->
+        <img src="Logo.png" alt="Logo" class="logo" width="150">
+
         <h1>TeamSpeak Servers</h1>
         <div class="link-group">
             <h2>Common</h2>
@@ -89,7 +96,7 @@
             <button class="btn" onclick="window.location.href='ts3server://extra.madadev.site'">Open</button>
             <button class="btn btn-copy" onclick="copyToClipboard('ts3server://extra.madadev.site')">Copy</button>
         </div>
-        
+
         <h1>Social Links</h1>
         <div class="social-links">
             <a href="https://vk.com/madadev" class="social-link" target="_blank" title="VK">
